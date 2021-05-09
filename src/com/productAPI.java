@@ -64,7 +64,7 @@ public class productAPI extends HttpServlet {
 		
 		
 		Map paras = getParasMap(request); 
-		 String output =productObj.updateproduct(paras.get("hidcodeSave").toString(), 
+		 String output =productObj.updateproduct(paras.get("code").toString(), 
 		 paras.get("name").toString(), 
 		 paras.get("price").toString(), 
 		paras.get("desc").toString()); 
