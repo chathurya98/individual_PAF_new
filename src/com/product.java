@@ -132,7 +132,7 @@ return output;
      return "Error while connecting to the database for updating."; 
      } 
      // create a prepared statement
-     String query = "UPDATE producttable SET name=?,price=?,desc=? WHERE code=?"; 
+     String query = "UPDATE `producttable` SET `name`=?,`price`=?,`desc`=? WHERE `code`=?"; 
      PreparedStatement preparedStmt = con.prepareStatement(query); 
      // binding values
    
@@ -156,8 +156,7 @@ return output;
      } 
      return output; 
      }
-    
-    
+  
     
 //    -----------------------------------------------DELETE----------------------------------------------
     public String deleteproduct(String code) 

@@ -80,7 +80,7 @@ if (status == "success")
  $("#alertError").show(); 
  } 
 $("#hidItemIDSave").val(""); 
-$("#formproduct")[0].reset(); 
+ 
 }
 
 
@@ -120,9 +120,10 @@ function onproductDeleteComplete(response, status){
 // UPDATE==========================================
 $(document).on("click", ".btnUpdate", function(event)
 { 
-		$("#hidItemIDSave").val($(this).data("hidItemIDSave")); 
+	 $("#hidItemIDSave").val($(this).data("code")); 
 		 $("#code").val($(this).closest("tr").find('td:eq(0)').text()); 
 		 $("#name").val($(this).closest("tr").find('td:eq(1)').text()); 
 		 $("#price").val($(this).closest("tr").find('td:eq(2)').text()); 
 		 $("#desc").val($(this).closest("tr").find('td:eq(3)').text()); 
+		 
 		});
