@@ -136,10 +136,11 @@ return output;
      PreparedStatement preparedStmt = con.prepareStatement(query); 
      // binding values
    
-     preparedStmt.setString(1, code); 
-     preparedStmt.setString(2, name); 
-     preparedStmt.setDouble(3, Double.parseDouble(price)); 
-     preparedStmt.setString(4, desc); 
+      
+     preparedStmt.setString(1, name); 
+     preparedStmt.setDouble(2, Double.parseDouble(price)); 
+     preparedStmt.setString(3, desc);
+     preparedStmt.setString(4, code);
     
      
     // execute the statement
