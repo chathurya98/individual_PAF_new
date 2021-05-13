@@ -4,6 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style > p.solid {border-style: solid;} </style>
 <link rel="stylesheet" href="Views/bootstrap.min.css">
 <script src="Components/jquery-3.6.0.min.js"></script>
 <script src="Components/product.js"></script>
@@ -12,17 +13,17 @@
 </head>
 <body>
 	<div class="container"><div class="row"><div class="col-6">
-		<h1>Product Details</h1>
-
+		<h1><h1 style="background-color:palevioletred;">Product Details</h1>
+<p class="solid">
 			<form id="formproduct" name="formproduct">
 			
-				Code:
+				<b>Code:</b>
 				<input id="code" name="code" type="text" class="form-control form-control-sm"><br>
-		 		Name:
+		 		<b>Name:</b>
 				<input id="name" name="name" type="text" class="form-control form-control-sm"><br> 
-				Price:
+				<b>Price:</b>
 				<input id="price" name="price" type="text" class="form-control form-control-sm"><br>
-		 		Description:
+		 		<b>Description:</b>
 				<input id="desc" name="desc" type="text" class="form-control form-control-sm"><br>
 				
 
@@ -34,7 +35,7 @@
 			<div id="alertError" class="alert alert-danger"></div>
 			<br>
 			<div id="divItemsGrid">
-				<%
+<%
  product productObj = new product();
  out.print(productObj.readproduct());
  %>

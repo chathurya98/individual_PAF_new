@@ -68,7 +68,7 @@ try
  return "Error while connecting to the database for reading."; 
  } 
  // Prepare the html table to be displayed
- output = "<table border='1'><tr><th> Code</th>" 
+ output = "<table border='5'><tr><th> Code</th>" 
  + "<th>Name</th><th>Price</th>"
  + "<th>Description</th>" 
  + "<th>Update</th><th>Remove</th></tr>"; 
